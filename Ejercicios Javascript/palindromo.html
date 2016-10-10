@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Programando</title>
+ 
+
+<script type="text/javascript">
+
+
+var texto = prompt("Hola, introduce un palindromo");
+alert("Comprobando variable palindromo: " + texto);
+
+function palindromo(texto) {
+
+var resultado = "";
+
+texto = texto.toLowerCase();
+
+alert("Comprobamos texto pasado a minusculas " + texto);
+
+var letras = texto.split(""); // convertir cadena en array letras
+
+alert("Convertir cadena en array de letras " + letras);
+
+var letrasinespacio = "";
+
+for(i in letras){
+
+	if(letras[i] != " ") {
+	
+	letrasinespacio += letras[i];
+	}
+}
+alert("cadena sin espacios " + letrasinespacio);
+
+var letras = letrasinespacio.split("");
+
+alert("array de letras sin espacios " + letras);
+
+var letrasrevers = letrasinespacio.split("").reverse();
+
+alert("letras al reves " + letrasrevers);
+
+for(i in letras){
+
+	//alert("en el for letras[i]" + letras[i]);
+	//alert("en el for letrasrevers[i]" + letrasrevers[i]);
+
+	if(letras[i] == letrasrevers[i]){
+
+	}
+	else{
+
+		//alert ("entro en el else");
+
+		return resultado = "No es un palindromo";
+
+	}
+
+}
+
+return resultado = "Es un palindromo";
+
+}
+
+
+
+var resultado = palindromo(texto);
+
+alert("El texto introducido: " + resultado);
+
+
+</script>
+</head>
+ 
+<body>
+<p>Jugando a programar</p>
+</body>
+</html>

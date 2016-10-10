@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>El primer script</title>
+ 
+
+<script type="text/javascript">
+  var valores = [true, 5, false, "hola", "adios", 2];
+  
+  resultado = valores[3] > valores[4];
+  alert("compración hola>adios: " + resultado);
+
+  resultado = valores[0] && valores[2];
+  alert("and:" + resultado);
+
+  resultado = valores[0] || valores[0];
+  alert("or:" + resultado);
+
+  numero= valores[1] + valores[5];
+  alert("suma 5+2 :" + numero);
+
+  numero= valores[1] - valores[5];
+  alert("resta 5-2 :" + numero);
+
+  numero= valores[1] * valores[5];
+  alert("multiplicacion 5*2 :" + numero);
+
+  numero= valores[1] / valores[5];
+  alert("division 5/2 :" + numero);
+  
+  numero= valores[1] % valores[5];
+  alert("modulo 5%2 :" + numero);
+
+</script>
+</head>
+ 
+<body>
+<p>Esta página muestra los 12 meses del año</p>
+</body>
+</html>
+

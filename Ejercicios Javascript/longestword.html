@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Programando</title>
+ 
+
+<script type="text/javascript">
+
+var frase = prompt ("Introduce una frase");
+alert ("variable frase: " + frase);
+
+function longestword (frase){
+
+	var arraypalabras = frase.match(/[a-z0-9]+/gi); // no lo acabo de entender
+	alert ("arr: " + arraypalabras);
+
+	//var arraypalabras = arr.split(" ");
+	//alert ("Array de palabras: " + arraypalabras);
+
+	lamaslarga = arraypalabras[0];
+	alert ("lamaslarga: " + lamaslarga);
+
+	for (i in arraypalabras){
+
+		var a = arraypalabras[i].length;
+		alert ("a: " + a);
+		var l = lamaslarga.length;
+		alert ("l: " + l);
+
+		if (a > l) {
+
+			lamaslarga = arraypalabras[i];
+		}
+	}
+
+	return lamaslarga;
+}
+
+var lamaslarga = longestword (frase);
+alert ("La palabra mas larga de la frase es: " + lamaslarga);
+
+</script>
+</head>
+ 
+<body>
+<p>Programando</p>
+</body>
+</html>
+
